@@ -10,6 +10,11 @@
       "name": "dream",
       "source": "./skills/dream",
       "description": "Consolidate repository plans, docs, instructions, memory and GitHub issues into fewer canonical sources."
+    },
+    {
+      "name": "github-native",
+      "source": "./skills/github-native",
+      "description": "Track project work with GitHub issues, sub-issues, milestones, labels, dependencies and PRs instead of parallel plans."
     }
   ]
 }
