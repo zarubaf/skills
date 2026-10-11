@@ -1,7 +1,6 @@
 {
   "name": "dream",
   "displayName": "Dream",
-  "version": "0.1.0",
   "description": "Repository-local consolidation and cleanup of agent-maintained state and GitHub issues.",
   "author": {
     "name": "zarubaf",
