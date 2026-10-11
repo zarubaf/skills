@@ -1,0 +1,22 @@
+{
+  "name": "github-native",
+  "displayName": "GitHub Native",
+  "description": "Keep project work in GitHub issues, milestones, labels and PRs instead of parallel agent planning systems.",
+  "author": {
+    "name": "zarubaf",
+    "url": "https://github.com/zarubaf"
+  },
+  "homepage": "https://github.com/zarubaf/skills",
+  "repository": "https://github.com/zarubaf/skills",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "issues",
+    "planning",
+    "superpowers",
+    "project-management"
+  ],
+  "skills": [
+    "."
+  ]
+}
