@@ -9,6 +9,7 @@ Inside an interactive Claude Code session:
 ```text
 /plugin marketplace add zarubaf/skills
 /plugin install dream@zarubaf-skills
+/plugin install github-native@zarubaf-skills
 ```
 
 Invoke Dream with `/dream:dream` (or `/dream:dream apply` / `/dream:dream verify`).
@@ -18,6 +19,7 @@ From the terminal instead:
 ```bash
 claude plugin marketplace add zarubaf/skills
 claude plugin install dream@zarubaf-skills
+claude plugin install github-native@zarubaf-skills
 ```
 
 User-level installation makes Dream available across repositories. It operates only on the repository in which you invoke it. GitHub issue reconciliation requires an authenticated GitHub CLI (`gh`).
@@ -38,13 +40,20 @@ Or in a shell:
 claude plugin update dream@zarubaf-skills
 ```
 
-Dream deliberately omits a fixed plugin version so new Git commits can be picked up when auto-update is enabled. Reload plugins or begin a new Claude Code session after an update if needed.
+Plugins deliberately omit fixed versions so new Git commits can be picked up when auto-update is enabled. Reload plugins or begin a new Claude Code session after an update if needed.
 
 ## Available plugins
 
 | Install ID | Skill | Purpose |
 | --- | --- | --- |
 | `dream@zarubaf-skills` | [Dream](skills/dream/SKILL.md) | Consolidate repository plans, documentation, Claude instructions, memory and GitHub issue state. |
+| `github-native@zarubaf-skills` | [GitHub Native](skills/github-native/SKILL.md) | Prevent parallel tracking systems; organize work in GitHub issues, milestones, labels and PRs. |
+
+## GitHub Native — think freely, track work in GitHub
+
+Superpowers can still brainstorm, design and produce detailed temporary execution plans. GitHub Native makes GitHub the durable source of truth for tasks rather than creating numbered lanes, slices, spikes or dated plan documents. It prefers existing issues, sub-issues, dependencies, milestones, labels and linked PRs, accessed through `gh`.
+
+Invoke `/github-native:github-native`, `/github-native:github-native organize` or `/github-native:github-native audit`. The default is read-only. If you want this policy applied consistently across sessions, see the optional [short `CLAUDE.md` policy](skills/github-native/references/superpowers.md); an ordinary skill cannot guarantee auto-invocation.
 
 ## Dream — let repositories forget
 
