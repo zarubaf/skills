@@ -22,6 +22,24 @@ claude plugin install dream@zarubaf-skills
 
 User-level installation makes Dream available across repositories. It operates only on the repository in which you invoke it. GitHub issue reconciliation requires an authenticated GitHub CLI (`gh`).
 
+## Keeping skills updated
+
+Custom Claude Code marketplaces have auto-update disabled by default. To turn it on, open `/plugin`, go to **Marketplaces**, select `zarubaf-skills`, and choose **Enable auto-update**.
+
+For manual updates:
+
+```text
+/plugin marketplace update zarubaf-skills
+```
+
+Or in a shell:
+
+```bash
+claude plugin update dream@zarubaf-skills
+```
+
+Dream deliberately omits a fixed plugin version so new Git commits can be picked up when auto-update is enabled. Reload plugins or begin a new Claude Code session after an update if needed.
+
 ## Available plugins
 
 | Install ID | Skill | Purpose |
