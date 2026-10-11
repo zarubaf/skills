@@ -1,0 +1,22 @@
+{
+  "name": "dream",
+  "displayName": "Dream",
+  "version": "0.1.0",
+  "description": "Repository-local consolidation and cleanup of agent-maintained state and GitHub issues.",
+  "author": {
+    "name": "zarubaf",
+    "url": "https://github.com/zarubaf"
+  },
+  "homepage": "https://github.com/zarubaf/skills",
+  "repository": "https://github.com/zarubaf/skills",
+  "license": "MIT",
+  "keywords": [
+    "consolidation",
+    "maintenance",
+    "github",
+    "repository-hygiene"
+  ],
+  "skills": [
+    "."
+  ]
+}
