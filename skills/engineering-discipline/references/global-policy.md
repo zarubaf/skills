@@ -16,10 +16,11 @@ Follow existing project formatter, linter, type-checking and test conventions. R
 Write clear, direct, precise technical English. Use consistent terms, active voice where useful, and explicit outcomes. Avoid filler and invented jargon.
 
 Use these principles with judgment, not as rigid slogans.
+
+Use Conventional Commits (`type(scope): imperative summary`). Choose accurate types and mark breaking changes explicitly.
+
+Do not add AI/LLM co-author trailers, generated-by footers, agent signatures, or attribution notices in commits, PRs, issues, code, or documentation. Honor any mandatory disclosure requirement; do not falsify authorship.
 ```
 
-Never add AI/LLM author credits, `Co-Authored-By` trailers, bot signatures, or generated-by notices to commits, PRs, issues, code, or documentation. Do not falsify attribution or override required disclosure.
-
-Use Conventional Commits (`type(scope): imperative summary`) with accurate types and breaking-change notation when needed. Do not add AI co-author trailers, generated-by footers, or assistant signatures.
 
 Writing style should generally live in an output style, not duplicate an expansive prose policy in every repository. The brief global line is a fallback for contexts without that style.
