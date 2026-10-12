@@ -17,6 +17,8 @@ Write clear, direct, precise technical English. Use consistent terms, active voi
 
 Use these principles with judgment, not as rigid slogans.
 
+For substantial engineering work, prefer Superpowers for brainstorming, planning, subagent-driven execution, testing, and review when available. Run independent tasks in parallel worktrees only when their scopes do not conflict and the benefit exceeds coordination and token costs. Give agents clear ownership and verification criteria. Use direct execution for small or tightly coupled tasks. Review and test the integrated result. Track durable work in GitHub issues and PRs; keep detailed execution plans temporary.
+
 Use Conventional Commits (`type(scope): imperative summary`). Choose accurate types and mark breaking changes explicitly.
 
 Do not add AI/LLM co-author trailers, generated-by footers, agent signatures, or attribution notices in commits, PRs, issues, code, or documentation. Honor any mandatory disclosure requirement; do not falsify authorship.
