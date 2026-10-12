@@ -15,6 +15,11 @@
       "name": "github-native",
       "source": "./skills/github-native",
       "description": "Track project work with GitHub issues, sub-issues, milestones, labels, dependencies and PRs instead of parallel plans."
+    },
+    {
+      "name": "engineering-discipline",
+      "source": "./skills/engineering-discipline",
+      "description": "Pragmatic engineering principles, native code-quality checks, and a clear technical English output style."
     }
   ]
 }
