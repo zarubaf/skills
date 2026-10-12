@@ -1,0 +1,32 @@
+---
+name: engineering-discipline
+description: Apply pragmatic maintainability principles, coherent design boundaries, clear technical explanations, and repository-native format/lint/type/test checks; configure a reusable global engineering policy on request.
+---
+
+# Engineering Discipline
+
+Optimize long-term maintenance cost in **this codebase**, not conformity to slogans. Keep changes coherent, small, testable, and easy to remove. Use the supplied [engineering principles](references/principles.md) when reviewing code, proposing architecture, or implementing changes.
+
+## Invocation
+
+- `/engineering-discipline:engineering-discipline`: Apply these engineering criteria to the current task. Default is advisory; do not change global settings.
+- `/engineering-discipline:engineering-discipline setup`: Propose a safe, concise, user-wide `~/.claude/CLAUDE.md` policy from [global policy](references/global-policy.md). Inspect any existing file, reconcile duplicated guidance, show the proposed diff, and request explicit approval before changing it. Never replace the file wholesale.
+- `/engineering-discipline:engineering-discipline audit`: Read-only audit of design boundaries, recurring engineering rules, formatter/linter/type/test practices, and opportunities to simplify.
+
+This plugin also ships the optional **Clear Technical English** output style in `output-styles/clear-technical-english.md`. Users select it through Claude Code's output-style selector; never force it or edit another style without approval.
+
+## Engineering behavior
+
+1. Read the repository's existing `CLAUDE.md`, contribution guidance, code conventions, and tooling before proposing changes. Project rules and explicit user requests may specialize these general preferences.
+2. Use separation of concerns, encapsulation, high cohesion/loose coupling, DRY **knowledge**, KISS, SRP, dependency inversion, YAGNI, composition, and small composable interfaces pragmatically. Prefer deletion and consolidation over new abstractions.
+3. When a behavior change is blocked by poor structure, first refactor the **affected area** with behavior-preserving checks, then implement the change. Do not expand into unrelated cleanup.
+4. When principles conflict, choose the trade-off that reduces expected future cost **in this repository**. Briefly state consequential trade-offs, not generic principle lists.
+5. Prefer existing formatters, linters, type checkers and tests. Inspect native configurations and CI, then run relevant checks on changed areas. If important checks are missing, propose conventional tools and wiring but seek approval before adding broad tooling or CI changes. Never install overlapping formatters or silently introduce large check frameworks.
+6. For documentation and responses, use direct, unambiguous language. State outcomes, commands and evidence clearly. Avoid ornamental jargon and redundant explanations. Don't claim formal ASD-STE100 compliance.
+
+## Boundaries
+
+- Do not impose repository-independent architecture, dependency frameworks, layering, or formatting tools.
+- Do not sacrifice correctness, clarity, compatibility, security, or user requirements to minimize LOC.
+- Do not edit user-level instructions, preferences, or settings unless explicitly approved.
+- Minimize recurring prompt cost: the global policy should be short; details stay in this on-demand skill.
