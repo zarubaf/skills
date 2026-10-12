@@ -10,6 +10,7 @@ Inside an interactive Claude Code session:
 /plugin marketplace add zarubaf/skills
 /plugin install dream@zarubaf-skills
 /plugin install github-native@zarubaf-skills
+/plugin install engineering-discipline@zarubaf-skills
 ```
 
 Invoke Dream with `/dream:dream` (or `/dream:dream apply` / `/dream:dream verify`).
@@ -20,6 +21,7 @@ From the terminal instead:
 claude plugin marketplace add zarubaf/skills
 claude plugin install dream@zarubaf-skills
 claude plugin install github-native@zarubaf-skills
+claude plugin install engineering-discipline@zarubaf-skills
 ```
 
 User-level installation makes Dream available across repositories. It operates only on the repository in which you invoke it. GitHub issue reconciliation requires an authenticated GitHub CLI (`gh`).
@@ -48,6 +50,17 @@ Plugins deliberately omit fixed versions so new Git commits can be picked up whe
 | --- | --- | --- |
 | `dream@zarubaf-skills` | [Dream](skills/dream/SKILL.md) | Consolidate repository plans, documentation, Claude instructions, memory and GitHub issue state. |
 | `github-native@zarubaf-skills` | [GitHub Native](skills/github-native/SKILL.md) | Prevent parallel tracking systems; organize work in GitHub issues, milestones, labels and PRs. |
+| `engineering-discipline@zarubaf-skills` | [Engineering Discipline](skills/engineering-discipline/SKILL.md) | Pragmatic code quality plus an optional clear technical English output style. |
+
+## Engineering Discipline — maintainability and clear writing
+
+Install `engineering-discipline@zarubaf-skills` for reusable engineering principles, repo-native formatting/lint/type/test checks, and an optional **Clear Technical English** output style inspired by ASD-STE100 (not formal compliance).
+
+- `/engineering-discipline:engineering-discipline` — apply the principles to current work.
+- `/engineering-discipline:engineering-discipline setup` — propose a concise global `~/.claude/CLAUDE.md` policy, without overwriting existing instructions.
+- `/engineering-discipline:engineering-discipline audit` — assess project standards and simplification opportunities.
+
+To enable the bundled writing style, open `/config`, choose **Output style**, and select **Clear Technical English**. It retains Claude Code's built-in coding instructions and is not forced on installation. Restart Claude Code if a newly installed style is not yet listed.
 
 ## GitHub Native — think freely, track work in GitHub
 
