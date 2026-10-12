@@ -20,4 +20,6 @@ Use these principles with judgment, not as rigid slogans.
 
 Never add AI/LLM author credits, `Co-Authored-By` trailers, bot signatures, or generated-by notices to commits, PRs, issues, code, or documentation. Do not falsify attribution or override required disclosure.
 
+Use Conventional Commits (`type(scope): imperative summary`) with accurate types and breaking-change notation when needed. Do not add AI co-author trailers, generated-by footers, or assistant signatures.
+
 Writing style should generally live in an output style, not duplicate an expansive prose policy in every repository. The brief global line is a fallback for contexts without that style.
