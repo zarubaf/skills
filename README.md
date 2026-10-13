@@ -11,6 +11,7 @@ Inside an interactive Claude Code session:
 /plugin install dream@zarubaf-skills
 /plugin install github-native@zarubaf-skills
 /plugin install engineering-discipline@zarubaf-skills
+/plugin install development-efficiency@zarubaf-skills
 ```
 
 Invoke Dream with `/dream:dream` (or `/dream:dream apply` / `/dream:dream verify`).
@@ -22,6 +23,7 @@ claude plugin marketplace add zarubaf/skills
 claude plugin install dream@zarubaf-skills
 claude plugin install github-native@zarubaf-skills
 claude plugin install engineering-discipline@zarubaf-skills
+claude plugin install development-efficiency@zarubaf-skills
 ```
 
 User-level installation makes Dream available across repositories. It operates only on the repository in which you invoke it. GitHub issue reconciliation requires an authenticated GitHub CLI (`gh`).
@@ -51,6 +53,17 @@ Plugins deliberately omit fixed versions so new Git commits can be picked up whe
 | `dream@zarubaf-skills` | [Dream](skills/dream/SKILL.md) | Consolidate repository plans, documentation, Claude instructions, memory and GitHub issue state. |
 | `github-native@zarubaf-skills` | [GitHub Native](skills/github-native/SKILL.md) | Prevent parallel tracking systems; organize work in GitHub issues, milestones, labels and PRs. |
 | `engineering-discipline@zarubaf-skills` | [Engineering Discipline](skills/engineering-discipline/SKILL.md) | Pragmatic code quality plus an optional clear technical English output style. |
+| `development-efficiency@zarubaf-skills` | [Development Efficiency](skills/development-efficiency/SKILL.md) | Diagnose slow CI, draft-PR checks, redundant work and unexplained waiting. |
+
+## Development Efficiency — question the waiting
+
+Slow tests, repeated CI jobs, stalled commands, and unnecessary checks are engineering problems worth diagnosing, not conditions agents should silently accept.
+
+- `/development-efficiency:development-efficiency` — apply efficient feedback and wait discipline while working.
+- `/development-efficiency:development-efficiency audit` — inspect CI runs, duplicated work, draft PR behavior, and workflow bottlenecks.
+- `/development-efficiency:development-efficiency plan` — propose evidence-backed workflow improvements with rollback and merge-gate protections.
+
+The skill is advisory by default. No hooks or timers are installed automatically. It includes an [opt-in global policy](skills/development-efficiency/references/global-policy.md) and [wait-discipline guidance](skills/development-efficiency/references/wait-discipline.md). Fast draft checks must not silently replace required full verification before merge.
 
 ## Engineering Discipline — maintainability and clear writing
 
