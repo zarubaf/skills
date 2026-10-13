@@ -1,0 +1,22 @@
+{
+  "name": "development-efficiency",
+  "displayName": "Development Efficiency",
+  "description": "Challenge slow feedback, wasteful CI, redundant checks, and unexplained waits without weakening verification.",
+  "author": {
+    "name": "zarubaf",
+    "url": "https://github.com/zarubaf"
+  },
+  "homepage": "https://github.com/zarubaf/skills",
+  "repository": "https://github.com/zarubaf/skills",
+  "license": "MIT",
+  "keywords": [
+    "ci",
+    "performance",
+    "developer-experience",
+    "github-actions",
+    "feedback-loops"
+  ],
+  "skills": [
+    "."
+  ]
+}
