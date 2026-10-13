@@ -20,6 +20,11 @@
       "name": "engineering-discipline",
       "source": "./skills/engineering-discipline",
       "description": "Pragmatic engineering principles, native code-quality checks, and a clear technical English output style."
+    },
+    {
+      "name": "development-efficiency",
+      "source": "./skills/development-efficiency",
+      "description": "Diagnose wasteful CI, slow feedback and unexplained waits without weakening merge-time checks."
     }
   ]
 }
