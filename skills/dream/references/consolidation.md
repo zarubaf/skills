@@ -9,4 +9,13 @@
 7. Update links and references, check instruction scope, and verify changes.
 8. Report net maintained Markdown LOC, files removed/added, proposed issue consolidations, and any uncertain claims.
 
+## Keep living documents present-tense
+
+- Maintain canonical documentation as a **current-state specification**, not an accumulation of historical updates.
+- Replace outdated descriptions instead of appending "Update", "Previously", "Now", dated logs, or agent session recaps.
+- Avoid recording change history inside instructions, README sections, architecture pages, or active plans when Git commits, PRs, and GitHub issues already carry it.
+- Where historical context is essential, link to the appropriate commit, PR, issue, or ADR rather than copying its timeline.
+- Preserve intentional historical material: ADR rationale and status, migration paths needed by users, release notes, incidents, security/audit records, and legal/compliance evidence.
+- Do not remove distinct requirements or reasoning that cannot be recovered simply to make a file shorter.
+
 Negative LOC is a preference, not a quota. Do not delete legal, security, incident, or audit records merely because they are old. Dates in filenames are appropriate for genuinely chronological records.
