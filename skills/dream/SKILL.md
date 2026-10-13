@@ -28,6 +28,12 @@ If invoked with ambiguous arguments, default to audit. Scheduled jobs may propos
 7. In apply mode, preserve unique facts and unfinished requirements FIRST, then merge or delete redundant files and fix inbound links. Never mutate issues automatically. If a task has no existing issue, propose a new one instead of silently dropping it.
 8. Verify that path globs match intended files, links resolve, retained requirements remain findable, and relevant project checks pass. Report Markdown LOC and file counts before/after; estimate token savings separately. If uncertain, prefer no-op.
 
+## Current state, not a changelog
+
+Repository instructions and canonical documentation should describe **what is true now**, not how an agent arrived there. Do not append "previously", "changed from", dated progress entries, superseded designs, decision-by-decision narration, or "what we tried" sections to living documents merely to preserve history. Git commits, PR discussions, and GitHub issues already provide history and provenance.
+
+During consolidation, replace obsolete passages with the current verified rule or explanation; remove historical narration when it is recoverable from version control. Point to a specific PR, commit, issue, or ADR only when the context is necessary to understand a decision. Do **not** rewrite immutable historical records, security/incident timelines, release notes, migration guides, legally required evidence, or ADR decision rationale where history is intrinsic.
+
 ## Guardrails
 
 - Avoid date-prefixed and numbered plan files, `DREAM_LOG.md`, and summary-of-summary documents. Keep genuinely chronological records where required.
